@@ -1,4 +1,4 @@
-import { procesarPedidos } from "./pedido.js";
+import { procesarPedidos } from "./modules/pedido.js";
 
 
 
