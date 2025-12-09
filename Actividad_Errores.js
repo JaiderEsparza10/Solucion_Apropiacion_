@@ -1,6 +1,10 @@
 import { registrarActividad } from "./modules/manejo_errores.js"; // Importa la función de registro
 
-// --- CASO 1: ÉXITO (Todas las propiedades presentes) ---
+// Módulo para manejar entradas de teclado en un entorno Node.js
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
+// --- CASO 1: ÉXITO (Todas las propiedades presentes)
 console.log("--- Caso 1: Actividad Válida ---");
 const actividadValida = {
     nombre: "Reunión de planificación",
@@ -11,7 +15,7 @@ const actividadValida = {
 
 registrarActividad(actividadValida);
 
-// --- CASO 2: ERROR (Falta la propiedad 'fecha') ---
+// --- CASO 2: ERROR (Falta la propiedad)
 console.log("\n==================================");
 console.log("--- Caso 2: Actividad Inválida (Falta fecha) ---");
 const actividadInvalidaFecha = {
@@ -22,7 +26,7 @@ const actividadInvalidaFecha = {
 registrarActividad(actividadInvalidaFecha);
 
 
-// --- CASO 3: ERROR (Falta la propiedad 'nombre') ---
+// --- CASO 3: ERROR (Falta la propiedad)
 console.log("\n==================================");
 console.log("--- Caso 3: Actividad Inválida (Falta nombre) ---");
 const actividadInvalidaNombre = {

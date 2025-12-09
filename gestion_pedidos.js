@@ -1,7 +1,5 @@
 import { procesarPedidos } from "./modules/pedido.js";
 
-
-
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 

@@ -1,5 +1,9 @@
 import { configurarUsuario } from "./modules/configuracion.js";
 
+// Módulo para manejar entradas de teclado en un entorno Node.js
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
 // Opciones por defecto (base)
 const defaults = { tema: "claro", idioma: "es", notificaciones: true };
 

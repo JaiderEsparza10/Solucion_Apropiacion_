@@ -1,5 +1,9 @@
 import { evaluar } from "./modules/evaluacion.js";
 
+// Módulo para manejar entradas de teclado en un entorno Node.js
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
 // --- CASO 1: ÉXITO (Todos los valores numéricos) ---
 console.log("--- Caso 1: Datos Válidos ---");
 const resultado1 = evaluar(10, 20, 30, 40, 50);

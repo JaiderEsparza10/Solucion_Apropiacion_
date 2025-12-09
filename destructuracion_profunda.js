@@ -1,5 +1,9 @@
 import { actualizarPerfil } from "./modules/perfil.js";
 
+// Módulo para manejar entradas de teclado en un entorno Node.js
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
 // Perfil base
 const perfilOriginal = {
     nombre: "Jaider Esparza",
@@ -29,5 +33,5 @@ console.log("---------------------------------");
 
 // Verificación de Inmutabilidad:
 if (perfilOriginal.edad === 28) {
-    console.log("✅ El perfil original no fue modificado (Inmutabilidad lograda).");
+    console.log("El perfil original no fue modificado (Inmutabilidad lograda).");
 }
